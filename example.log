@@ -1,0 +1,13 @@
+2020-07-22 11:53:23,015 WARNING:is when this event was logged.
+2020-07-22 11:53:23,016 DEBUG:This message should go to the log file
+2020-07-22 11:53:23,016 INFO:So should this
+2020-07-22 11:53:23,016 WARNING:And this, too
+2020-07-22 11:59:19,018 WARNING:is when this event was logged.
+2020-07-22 11:59:19,019 INFO:So should this
+2020-07-22 11:59:19,019 WARNING:And this, too
+2020-07-22 12:00:25,223 WARNING:is when this event was logged.
+2020-07-22 12:00:25,224 WARNING:And this, too
+2020-07-22 12:02:10,229 WARNING:is when this event was logged.
+2020-07-22 12:02:10,229 DEBUG:This message should go to the log file
+2020-07-22 12:02:10,230 INFO:So should this
+2020-07-22 12:02:10,230 WARNING:And this, too
