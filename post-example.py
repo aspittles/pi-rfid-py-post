@@ -9,3 +9,5 @@ for x in f:
     print(x)
 f.close()
 
+# curl -d "login=&username=door&password=<ThePassword>&button=Open+Door" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://192.168.0.210/dyn
+# data = '{"nw_src": "10.0.0.1/32", "nw_dst": "10.0.0.2/32", "nw_proto": "ICMP", "actions": "ALLOW", "priority": "10"}'
