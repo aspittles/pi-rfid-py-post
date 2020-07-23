@@ -1,0 +1,48 @@
+{
+  "config": {
+    "log_level": "DEBUG",
+    "reader": "RF522"
+  },
+  "users": {
+    "1045648350430": {
+      "created": "Thu Jun 22 21:00:00 +0000 2017",
+      "lastEntered": "Thu Jun 22 21:00:00 +0000 2017",
+      "keyType": "KeyFob",
+      "active": true,
+      "firstName": "Krish",
+      "lastName": "Lee"
+    },
+    "1062044203790": {
+      "created": "Thu Jun 22 21:00:00 +0000 2017",
+      "lastEntered": "Thu Jun 22 21:00:00 +0000 2017",
+      "keyType": "KeyFob",
+      "active": false,
+      "firstName": "Fred",
+      "lastName": "Blogs"
+    },
+    "699481201718": {
+      "created": "Thu Jun 22 21:00:00 +0000 2017",
+      "lastEntered": "Thu Jun 22 21:00:00 +0000 2017",
+      "keyType": "KeyCard",
+      "active": true,
+      "firstName": "Denial",
+      "lastName": "Roast"
+    },
+    "785550682883": {
+      "created": "Thu Jun 22 21:00:00 +0000 2017",
+      "lastEntered": "Thu Jun 22 21:00:00 +0000 2017",
+      "keyType": "KeyCard",
+      "active": true,
+      "firstName": "Devid",
+      "lastName": "Neo"
+    },
+    "36199966818": {
+      "created": "Thu Jun 22 21:00:00 +0000 2017",
+      "lastEntered": "Thu Jun 22 21:00:00 +0000 2017",
+      "keyType": "Android",
+      "active": false,
+      "firstName": "Jone",
+      "lastName": "Mac"
+    }
+  }
+}
