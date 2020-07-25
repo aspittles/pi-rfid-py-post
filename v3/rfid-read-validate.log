@@ -24,3 +24,111 @@
 2020-07-24 00:12:54,156 INFO:Access by:Fred Blogs
 2020-07-24 00:14:11,226 INFO:Access by:Fred Blogs
 2020-07-24 00:17:42,824 INFO:Access by:Devid Neo
+2020-07-25 16:10:16,932 WARNING:Access attempt by: 1080748350430
+2020-07-25 16:10:23,228 INFO:Access by:Denial Roast
+2020-07-25 16:10:28,457 INFO:Access by:Devid Neo
+2020-07-25 16:10:40,368 ERROR:Error while reading!
+2020-07-25 16:10:40,369 INFO:Access by:Fred Blogs
+2020-07-25 21:05:42,790 INFO:Access by:Devid Neo
+2020-07-25 21:09:34,766 INFO:Access by:Devid Neo
+2020-07-25 21:14:29,905 INFO:Access by:Devid Neo
+2020-07-25 21:15:00,621 INFO:Access by:Fred Blogs
+2020-07-25 21:18:42,067 INFO:Access by:Devid Neo
+2020-07-25 21:18:48,494 WARNING:Access attempt by: 1080748350430
+2020-07-25 21:19:39,867 ERROR:AUTH ERROR!!
+2020-07-25 21:19:39,868 ERROR:AUTH ERROR(status2reg & 0x08) != 0
+2020-07-25 21:19:39,869 WARNING:Access attempt by: 37699943074
+2020-07-25 21:19:48,165 INFO:Access by:Devid Neo
+2020-07-25 21:31:06,131 INFO:Access by:Devid Neo
+2020-07-25 21:31:13,561 WARNING:Access attempt by: 1080748350430
+2020-07-25 21:36:05,620 INFO:Access by:Devid Neo
+2020-07-25 21:36:13,460 WARNING:Access attempt by: 1080748350430
+2020-07-25 21:48:22,848 INFO:Access by:Devid Neo
+2020-07-25 21:48:29,489 WARNING:Access attempt by: 1080748350430
+2020-07-25 21:49:27,212 INFO:Access by:Devid Neo
+2020-07-25 21:49:36,235 WARNING:Access attempt by: 1080748350430
+2020-07-25 21:52:13,298 INFO:Access by:Devid Neo
+2020-07-25 21:52:19,270 WARNING:Access attempt by: 1080748350430
+2020-07-25 21:52:37,579 INFO:Access by:Denial Roast
+2020-07-25 21:52:45,252 INFO:Access by:Fred Blogs
+2020-07-25 22:09:47,195 INFO:Access by:Denial Roast
+2020-07-25 22:09:47,291 INFO:Access by:Denial Roast
+2020-07-25 22:09:47,387 INFO:Access by:Denial Roast
+2020-07-25 22:09:47,483 INFO:Access by:Denial Roast
+2020-07-25 22:09:47,579 INFO:Access by:Denial Roast
+2020-07-25 22:09:47,675 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,062 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,158 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,254 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,350 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,446 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,542 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,638 INFO:Access by:Denial Roast
+2020-07-25 22:09:49,734 INFO:Access by:Denial Roast
+2020-07-25 22:09:56,137 INFO:Access by:Devid Neo
+2020-07-25 22:09:56,233 INFO:Access by:Devid Neo
+2020-07-25 22:09:56,329 INFO:Access by:Devid Neo
+2020-07-25 22:09:56,425 INFO:Access by:Devid Neo
+2020-07-25 22:09:56,521 INFO:Access by:Devid Neo
+2020-07-25 22:09:56,618 INFO:Access by:Devid Neo
+2020-07-25 22:09:56,714 INFO:Access by:Devid Neo
+2020-07-25 22:10:01,447 ERROR:Error while reading!
+2020-07-25 22:10:01,448 INFO:Access by:Fred Blogs
+2020-07-25 22:10:01,471 INFO:Access by:Fred Blogs
+2020-07-25 22:10:01,567 INFO:Access by:Fred Blogs
+2020-07-25 22:10:01,664 INFO:Access by:Fred Blogs
+2020-07-25 22:10:01,760 INFO:Access by:Fred Blogs
+2020-07-25 22:10:01,856 INFO:Access by:Fred Blogs
+2020-07-25 22:10:01,952 INFO:Access by:Fred Blogs
+2020-07-25 22:10:06,233 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:06,329 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:06,426 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:06,522 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:06,618 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:27,057 INFO:Access by:Devid Neo
+2020-07-25 22:10:27,153 INFO:Access by:Devid Neo
+2020-07-25 22:10:27,250 INFO:Access by:Devid Neo
+2020-07-25 22:10:33,325 INFO:Access by:Denial Roast
+2020-07-25 22:10:33,421 INFO:Access by:Denial Roast
+2020-07-25 22:10:33,516 INFO:Access by:Denial Roast
+2020-07-25 22:10:33,612 INFO:Access by:Denial Roast
+2020-07-25 22:10:33,709 INFO:Access by:Denial Roast
+2020-07-25 22:10:33,801 INFO:Access by:Denial Roast
+2020-07-25 22:10:37,724 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:37,821 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:37,918 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:38,015 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:10:41,863 INFO:Access by:Fred Blogs
+2020-07-25 22:10:41,960 INFO:Access by:Fred Blogs
+2020-07-25 22:10:42,056 INFO:Access by:Fred Blogs
+2020-07-25 22:10:42,153 INFO:Access by:Fred Blogs
+2020-07-25 22:21:20,021 INFO:Access by:Devid Neo
+2020-07-25 22:21:20,119 INFO:Access by:Devid Neo
+2020-07-25 22:21:20,216 INFO:Access by:Devid Neo
+2020-07-25 22:21:20,312 INFO:Access by:Devid Neo
+2020-07-25 22:21:20,409 INFO:Access by:Devid Neo
+2020-07-25 22:21:20,506 INFO:Access by:Devid Neo
+2020-07-25 22:21:20,603 INFO:Access by:Devid Neo
+2020-07-25 22:21:24,459 INFO:Access by:Denial Roast
+2020-07-25 22:21:24,556 INFO:Access by:Denial Roast
+2020-07-25 22:21:24,653 INFO:Access by:Denial Roast
+2020-07-25 22:21:24,750 INFO:Access by:Denial Roast
+2020-07-25 22:21:24,846 INFO:Access by:Denial Roast
+2020-07-25 22:21:30,340 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:21:30,436 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:21:30,532 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:21:30,628 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:21:30,724 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:21:30,820 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:21:34,410 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:21:34,507 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:21:34,603 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:21:34,699 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:21:34,795 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:21:34,891 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:23:05,668 INFO:Access by:Devid Neo
+2020-07-25 22:23:12,354 INFO:Access by:Denial Roast
+2020-07-25 22:23:19,147 WARNING:Access attempt by: 1080748350430
+2020-07-25 22:23:25,287 ERROR:Error while reading!
+2020-07-25 22:23:25,288 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-25 22:23:34,201 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
