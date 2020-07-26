@@ -132,3 +132,15 @@
 2020-07-25 22:23:25,287 ERROR:Error while reading!
 2020-07-25 22:23:25,288 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
 2020-07-25 22:23:34,201 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 16:44:40,983 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 16:44:52,278 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 16:44:58,424 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:15:06,317 INFO:Access by:Devid Neo
+2020-07-26 17:15:28,106 INFO:Access by:Devid Neo
+2020-07-26 17:15:33,335 INFO:Access by:Denial Roast
+2020-07-26 17:15:44,087 WARNING:Access attempt by: 1080748350430
+2020-07-26 17:15:56,969 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:16:37,212 INFO:Access by:Devid Neo
+2020-07-26 17:16:43,525 WARNING:Access attempt by: 1080748350430
+2020-07-26 17:16:49,561 INFO:Access by:Denial Roast
+2020-07-26 17:16:55,404 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
