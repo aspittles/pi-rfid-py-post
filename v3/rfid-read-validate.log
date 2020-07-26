@@ -144,3 +144,74 @@
 2020-07-26 17:16:43,525 WARNING:Access attempt by: 1080748350430
 2020-07-26 17:16:49,561 INFO:Access by:Denial Roast
 2020-07-26 17:16:55,404 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:25:07,967 INFO:Access by:Denial Roast
+2020-07-26 17:25:14,860 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:26:02,767 WARNING:Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:26:13,236 INFO:Access by:Denial Roast
+2020-07-26 17:26:19,009 INFO:Access by:Devid Neo
+2020-07-26 17:28:51,416 INFO:ALLOW: Access by:Denial Roast
+2020-07-26 17:28:55,807 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:28:58,955 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 17:29:01,938 INFO:ALLOW: Access by:Devid Neo
+2020-07-26 17:29:05,025 ERROR:AUTH ERROR!!
+2020-07-26 17:29:05,026 ERROR:AUTH ERROR(status2reg & 0x08) != 0
+2020-07-26 17:29:05,027 INFO:BLOCK: Access attempt by: 37203184726
+2020-07-26 17:31:25,597 INFO:ALLOW: Access by:699481201718 (Denial Roast)
+2020-07-26 17:31:28,359 INFO:ALLOW: Access by:785550682883 (Devid Neo)
+2020-07-26 17:37:23,239 ERROR:Error while reading!
+2020-07-26 17:37:23,239 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:37:26,291 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 17:37:29,358 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 17:37:31,988 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 17:44:56,554 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:44:56,554 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 17:45:23,521 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:45:23,521 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 17:45:32,743 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 17:45:32,743 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Denial', 'lastName': 'Roast'}
+2020-07-26 17:45:43,148 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:45:43,148 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 17:45:55,896 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:45:55,896 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 17:45:58,823 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 17:45:58,823 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Devid', 'lastName': 'Neo'}
+2020-07-26 17:46:15,381 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:46:15,382 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 17:47:07,009 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 17:47:07,010 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 17:47:10,502 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 17:47:13,047 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 17:47:13,047 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Devid', 'lastName': 'Neo'}
+2020-07-26 17:47:15,489 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 17:47:15,489 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Denial', 'lastName': 'Roast'}
+2020-07-26 18:03:08,080 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 18:03:08,084 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 18:03:11,756 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 18:03:11,757 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Devid', 'lastName': 'Neo'}
+2020-07-26 18:03:15,789 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 18:03:15,790 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Denial', 'lastName': 'Roast'}
+2020-07-26 18:03:20,212 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 18:03:20,213 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 18:16:47,112 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 18:16:47,113 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyFob', 'active': False, 'firstName': 'Fred', 'lastName': 'Blogs'}
+2020-07-26 18:16:50,651 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 18:16:50,652 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Denial', 'lastName': 'Roast'}
+2020-07-26 18:16:53,496 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 18:16:53,497 DEBUG:{'created': 'Thu Jun 22 21:00:00 +0000 2017', 'lastEntered': 'Thu Jun 22 21:00:00 +0000 2017', 'keyType': 'KeyCard', 'active': True, 'firstName': 'Devid', 'lastName': 'Neo'}
+2020-07-26 18:16:56,757 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 18:17:48,951 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 18:17:51,113 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 18:17:54,673 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 18:17:57,116 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 21:58:13,555 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 21:58:17,615 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 21:58:23,189 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 21:58:28,670 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 22:06:37,762 INFO:ALLOW: Access by: 785550682883 (Devid Neo)
+2020-07-26 22:06:41,048 INFO:ALLOW: Access by: 699481201718 (Denial Roast)
+2020-07-26 22:06:44,405 ERROR:Error while reading!
+2020-07-26 22:06:44,406 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 22:06:47,323 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 22:06:51,533 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)
+2020-07-26 22:54:27,000 INFO:BLOCK: Access attempt by: 1080748350430
+2020-07-26 22:54:31,491 INFO:BLOCK: Deactivated card attempt by: 1062044203790 (Fred Blogs)

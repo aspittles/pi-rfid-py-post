@@ -1,19 +1,8 @@
-from time import sleep
 import RPi.GPIO as GPIO
-import sys
-import json
-import logging
+import sys, logging, json, datetime
+from time import sleep
 sys.path.append('/home/pi/MFRC522-python')
 from mfrc522 import SimpleMFRC522
-
-# Setup GPIO Pins for use with Bi-Colour LED
-# GPIO.setwarnings(False) # Ignore warning for now
-# Use physical pin numbering
-GPIO.setmode(GPIO.BOARD)
-
-# Set pin 29 & 31 to be an output pin and set initial value to low (off)
-GPIO.setup(29, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(31, GPIO.OUT, initial=GPIO.LOW)
 
 # Function to Read the RFID card
 def rfid_read():
@@ -27,19 +16,21 @@ def validate_access( uid, data ):
     name = (data["users"][str(uid)]["firstName"]) + " " + (data["users"][str(uid)]["lastName"])
     authorised = (data["users"][str(uid)]["active"])
     if authorised:
-      logging.info("Access by:" + name)
+      logging.info("ALLOW: Access by: " + str(uid) + " (" + name + ")")
+      logging.debug((data["users"][str(uid)]))
+      now = datetime.datetime.now()
+      data["users"][str(uid)]["lastEntered"] = now.strftime("%Y-%m-%d %H:%M:%S")
+      with open('rfid-door-lock.json', 'w') as f:
+        json.dump(data, f)
       led_green()
     else:
-      logging.warning("Deactivated card attempt by: " + str(uid) + " (" + name + ")")
+      logging.info("BLOCK: Deactivated card attempt by: " + str(uid) + " (" + name + ")")
+      logging.debug((data["users"][str(uid)]))
       led_red()
-    # print(name + " " + str(status))
-    # print((data["users"][str(uid)]["firstName"]) + " " + (data["users"][str(uid)]["lastName"]) + " - Status: " + str(data["users"][str(uid)]["active"]))
-    #print(data["users"][str(uid)])
   except KeyError:
-    print("ID doesn't exist")
-    logging.warning("Access attempt by: " + str(uid))
-    led_red()
     authorised = False
+    logging.info("BLOCK: Access attempt by: " + str(uid))
+    led_red()
 
   return authorised;
 
@@ -55,13 +46,20 @@ def led_off():
   GPIO.output(29, GPIO.LOW) # Turn off
   GPIO.output(31, GPIO.LOW) # Turn off
 
-
 # Read the config file and store in memory
 with open('rfid-door-lock.json') as f:
   data = json.load(f)
 
 # Enable & configure logging
-logging.basicConfig(filename=(data["config"]["log_file"]),level=logging.DEBUG,format='%(asctime)s %(levelname)s:%(message)s')
+logging.basicConfig(filename=(data["config"]["log_file"]),level=logging.INFO,format='%(asctime)s %(levelname)s:%(message)s')
+
+# Setup GPIO Pins for use with Bi-Colour LED
+# Use physical pin numbering
+GPIO.setmode(GPIO.BOARD)
+
+# Set pin 29 & 31 to be an output pin and set initial value to low (off)
+GPIO.setup(29, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(31, GPIO.OUT, initial=GPIO.LOW)
 
 # Create RFID reader object
 reader = SimpleMFRC522()
@@ -72,7 +70,7 @@ try:
     uid = rfid_read();
     authorised = validate_access( uid, data );
     print(str(authorised))
-    sleep(5);
+    sleep(2);
     led_off()
 
 except KeyboardInterrupt:
