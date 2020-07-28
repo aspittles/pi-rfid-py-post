@@ -43,7 +43,7 @@ uid = 1080748350430
 
 led_green()
 
-a_dictionary = {"users": {str(uid): {"lastEntered": "Test"}}}
+a_dictionary = {"users": {"1234567899012": {"created": "2020-07-01 19:00:00","lastEntered": "","keyType": "KeyFob","active": True,"firstName": "Krish","lastName": "Lee"}}}
 
 #data["users"][str(uid)]["lastEntered"] = ''
 #data["users"][str(uid)]["active"] = True
@@ -53,9 +53,9 @@ a_dictionary = {"users": {str(uid): {"lastEntered": "Test"}}}
 #data["users"][str(uid)]["firstName"] = firstname
 #data["users"][str(uid)]["lastName"] = lastname
 
-data.update(a_dictionary)
-
 with open('rfid-door-lock.json', 'r+') as f:
+  data = json.load(f)
+  data.update(a_dictionary)
   f.seek(0)
   json.dump(data, f)
 

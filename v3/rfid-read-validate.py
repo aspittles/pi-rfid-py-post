@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import sys, logging, json, datetime
+import sys, logging, json, datetime, requests
 from time import sleep
 sys.path.append('/home/pi/MFRC522-python')
 from mfrc522 import SimpleMFRC522
@@ -16,6 +16,7 @@ def validate_access( uid, data ):
     name = (data["users"][str(uid)]["firstName"]) + " " + (data["users"][str(uid)]["lastName"])
     authorised = (data["users"][str(uid)]["active"])
     if authorised:
+      open_door()
       logging.info("ALLOW: Access by: " + str(uid) + " (" + name + ")")
       logging.debug((data["users"][str(uid)]))
       now = datetime.datetime.now()
@@ -33,6 +34,18 @@ def validate_access( uid, data ):
     led_red()
 
   return authorised;
+
+def open_door():
+  headers = {
+    'Content-Type': 'application/x-www-form-urlencoded',
+  }
+  data = {
+    'login': '',
+    'username': 'door',
+    'password': '<Password>',
+    'button': 'Open Door'
+  }
+  response = requests.post('http://192.168.0.210/dyn', headers=headers, data=data)
 
 def led_green():
   GPIO.output(29, GPIO.HIGH) # Turn on
