@@ -35,6 +35,7 @@ def validate_access( uid, data ):
 
   return authorised;
 
+# Function to Open the Door lock via URL post to door system
 def open_door():
   headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
@@ -47,14 +48,17 @@ def open_door():
   }
   response = requests.post('http://192.168.0.210/dyn', headers=headers, data=data)
 
+# Function to Turn on LED green
 def led_green():
   GPIO.output(29, GPIO.HIGH) # Turn on
   GPIO.output(31, GPIO.LOW) # Turn off
 
+# Function to Turn on LED red
 def led_red():
   GPIO.output(29, GPIO.LOW) # Turn off
   GPIO.output(31, GPIO.HIGH) # Turn on
 
+# Function to Turn off LED
 def led_off():
   GPIO.output(29, GPIO.LOW) # Turn off
   GPIO.output(31, GPIO.LOW) # Turn off
