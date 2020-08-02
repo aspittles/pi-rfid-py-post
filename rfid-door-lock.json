@@ -1,9 +1,4 @@
 {
-  "config": {
-    "log_level": "DEBUG",
-    "log_file": "/home/pi/pi-rfid-py-post/v3/rfid-read-validate.log",
-    "reader": "RF522"
-  },
   "users": {
     "1045648350430": {
       "created": "Thu Jun 22 21:00:00 +0000 2017",

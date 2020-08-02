@@ -16,7 +16,7 @@ def validate_access( uid, data ):
     name = (data["users"][str(uid)]["firstName"]) + " " + (data["users"][str(uid)]["lastName"])
     authorised = (data["users"][str(uid)]["active"])
     if authorised:
-      open_door()
+      # open_door()
       logging.info("ALLOW: Access by: " + str(uid) + " (" + name + ")")
       logging.debug((data["users"][str(uid)]))
       now = datetime.datetime.now()
