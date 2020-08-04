@@ -1,0 +1,24 @@
+KeyCard 1
+[162, 220, 84, 28, 54]
+ID: 699481201718
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xa2\xdcT\x1c')
+b'4b010100040804a2dc541c'
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): a2  dc  54  1c
+      SAK (SEL_RES): 08
+
+
+
+KeyCard 2
+[182, 230, 120, 43, 3]
+ID: 785550682883
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xb6\xe6x+')
+b'4b010100040804b6e6782b'
+
+KeyCard 3
+[18, 156, 180, 52, 14]
+ID: 79938466830
+bytearray(b'K\x01\x01\x00\x04\x08\x04\x12\x9c\xb44')
+
+

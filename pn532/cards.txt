@@ -1,0 +1,76 @@
+KeyFob
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): fb  a1  9f  1b
+      SAK (SEL_RES): 08
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xfb\xa1\x9f\x1b')
+
+KeyFob
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): c9  51  72  a2
+      SAK (SEL_RES): 08
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xc9Qr\xa2')
+
+KeyFob
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): fb  a1  9f  1b
+      SAK (SEL_RES): 08
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xfb\xa1\x9f\x1b')
+
+KeyCard
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): a2  dc  54  1c
+      SAK (SEL_RES): 08
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xa2\xdcT\x1c')
+
+b'4b010100040804a2dc541c'
+
+KeyCard
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): b6  e6  78  2b
+      SAK (SEL_RES): 08
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00\x04\x08\x04\xb6\xe6x+')
+
+b'4b010100040804b6e6782b'
+
+KeyCard
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  04
+       UID (NFCID1): 12  9c  b4  34
+      SAK (SEL_RES): 08
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00\x04\x08\x04\x12\x9c\xb44')
+
+CreditCard
+ISO/IEC 14443A (106 kbps) target:
+    ATQA (SENS_RES): 00  44
+       UID (NFCID1): 02  b0  fe  01  c0  c4  40
+      SAK (SEL_RES): 20
+                ATS: 78  80  74  02  00  31  c1  73  c8  21  10  64  47  4d  31  33  00  90  00
+nfc_initiator_target_is_present: Target Released
+Waiting for card removing...done.
+pi@raspberrypi:~/pi-rfid-py-post/pn532 $ python3 read-card.py
+bytearray(b'K\x01\x01\x00D \x07\x02\xb0\xfe\x01\xc0\xc4@\x14x\x80t\x02\x001\xc1s\xc8!\x10dGM13\x00\x90\x00')
+
+b'4b01010044200702b0fe01c0c44014788074020031c173c8211064474d3133009000'
