@@ -3,12 +3,32 @@ import sys, logging, json, datetime, requests
 from time import sleep
 sys.path.append('/home/pi/MFRC522-python')
 from mfrc522 import SimpleMFRC522
+sys.path.append('/home/pi/py532lib-master')
+from py532lib.i2c import *
+from py532lib.frame import *
+from py532lib.constants import *
 
-# Function to Read the RFID card
-def rfid_read():
-  print("Hold a tag near the reader")
+# Function to Read the RFID card Using RC522 Reader
+def rfid_read_RC522():
+  print("Hold a tag near the RC522 reader")
   uid, text = reader.read()
-  return uid;
+  return uid
+
+# Function to Read the RFID card Using PN532 Reader
+def rfid_read_PN532():
+  print("Hold a tag near the PN532 reader")
+  pn532 = Pn532_i2c()
+  pn532.SAMconfigure()
+  card_data = pn532.read_mifare().get_data()
+  uid = uid_to_num(card_data[7:11])
+  return uid
+
+# Function to convert UID bytearray to a decimal UID
+def uid_to_num(uid):
+  n = 0
+  for i in range(0, 4):
+    n = n * 256 + uid[i]
+  return n
 
 # Function to Validate the Card UID against JSON list of allowed users
 def validate_access( uid, data ):
@@ -84,7 +104,12 @@ reader = SimpleMFRC522()
 # Main Loop
 try:
   while True:
-    uid = rfid_read();
+    if (data["config"]["reader"] == "RC522"):
+      uid = rfid_read_RC522()
+    elif (data["config"]["reader"] == "PN532"):
+      uid = rfid_read_PN532()
+    else:
+      uid = 0
     authorised = validate_access( uid, data );
     print(str(authorised))
     sleep(2);
