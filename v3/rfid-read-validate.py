@@ -10,13 +10,13 @@ from py532lib.constants import *
 
 # Function to Read the RFID card Using RC522 Reader
 def rfid_read_RC522():
-  print("Hold a tag near the RC522 reader")
+  #print("Hold a tag near the RC522 reader")
   uid, text = reader.read()
   return uid
 
 # Function to Read the RFID card Using PN532 Reader
 def rfid_read_PN532():
-  print("Hold a tag near the PN532 reader")
+  #print("Hold a tag near the PN532 reader")
   pn532 = Pn532_i2c()
   pn532.SAMconfigure()
   card_data = pn532.read_mifare().get_data()
@@ -36,7 +36,9 @@ def validate_access( uid, data ):
     name = (data["users"][str(uid)]["firstName"]) + " " + (data["users"][str(uid)]["lastName"])
     authorised = (data["users"][str(uid)]["active"])
     if authorised:
-      # open_door()
+      if (data["config"]["open_door"]):
+        doorpass = data["config"]["door_pass"]
+        open_door(doorpass)
       logging.info("ALLOW: Access by: " + str(uid) + " (" + name + ")")
       logging.debug((data["users"][str(uid)]))
       now = datetime.datetime.now()
@@ -56,14 +58,14 @@ def validate_access( uid, data ):
   return authorised;
 
 # Function to Open the Door lock via URL post to door system
-def open_door():
+def open_door(doorpass):
   headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
   }
   data = {
     'login': '',
     'username': 'door',
-    'password': '<Password>',
+    'password': doorpass,
     'button': 'Open Door'
   }
   response = requests.post('http://192.168.0.210/dyn', headers=headers, data=data)
@@ -84,7 +86,7 @@ def led_off():
   GPIO.output(31, GPIO.LOW) # Turn off
 
 # Read the config file and store in memory
-with open('rfid-door-lock.json') as f:
+with open('/home/pi/pi-rfid-py-post/v3/rfid-door-lock.json') as f:
   data = json.load(f)
 
 # Enable & configure logging
@@ -111,9 +113,12 @@ try:
     else:
       uid = 0
     authorised = validate_access( uid, data );
-    print(str(authorised))
     sleep(2);
     led_off()
 
 except KeyboardInterrupt:
   GPIO.cleanup()
+
+
+#    "door_pass": "<Password>"
+
