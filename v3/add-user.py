@@ -14,42 +14,51 @@ def write_json(data, filename='rfid-door-lock.json'):
 with open('rfid-door-lock.json') as f:
   data = json.load(f)
 
-# Main Loop
-firstname = input('Enter First Name:')
-lastname = input('Enter Last Name:')
-keytype = input('Enter Key Type (KeyFob/KeyCard/CreditCard/OpalCard/Other):')
-
-uid = rfid_read_PN532()
-
 led_init()
 
-led_green()
+# Main Loop
+while True:
+  firstname = ""
+  lastname = ""
+  keytype = ""
+  notes = ""
+  print("Press Enter to Finish")
+  firstname = input('Enter First Name:')
+  if (firstname == ""):
+    break
+  lastname = input('Enter Last Name:')
+  keytype = input('Enter Key Type (KeyFob/KeyCard/CreditCard/OpalCard/Other):')
+  notes = input('Enter Notes:')
 
-with open('rfid-door-lock.json') as json_file:
+  uid = rfid_read_PN532()
+
+  led_green()
+
+  with open('rfid-door-lock.json') as json_file:
     data = json.load(json_file)
 
-users = data["users"]
+  users = data["users"]
 
-# python object to be appended
-now = datetime.datetime.now()
-new_user = {'uid': str(uid),
-            'created': now.strftime("%Y-%m-%d %H:%M:%S"),
-            'lastEntered': "",
-            'keyType': keytype,
-            'active': True,
-            'firstName': firstname,
-            'lastName': lastname
-           }
+  # python object to be appended
+  now = datetime.datetime.now()
+  new_user = {'uid': str(uid),
+              'created': now.strftime("%Y-%m-%d %H:%M:%S"),
+              'lastEntered': "",
+              'keyType': keytype,
+              'active': True,
+              'firstName': firstname,
+              'lastName': lastname,
+              'notes': notes
+             }
 
-print(new_user)
+  print(new_user)
 
-# appending data to emp_details
-users.append(new_user)
+  # appending data to emp_details
+  users.append(new_user)
+  write_json(data)
 
-write_json(data)
-
-sleep(2)
-led_off()
+  sleep(2)
+  led_off()
 
 GPIO.cleanup()
 
@@ -67,4 +76,3 @@ GPIO.cleanup()
 #         }
 #     ]
 # }
-

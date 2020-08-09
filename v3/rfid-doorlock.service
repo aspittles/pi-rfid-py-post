@@ -1,5 +1,5 @@
 [Unit]
-Description=Dummy Service
+Description=RFID Door Lock Service
 After=multi-user.target
 Conflicts=getty@tty1.service
 
