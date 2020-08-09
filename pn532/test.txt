@@ -2,23 +2,29 @@ KeyCard 1
 [162, 220, 84, 28, 54]
 ID: 699481201718
 bytearray(b'K\x01\x01\x00\x04\x08\x04\xa2\xdcT\x1c')
-b'4b010100040804a2dc541c'
-ISO/IEC 14443A (106 kbps) target:
-    ATQA (SENS_RES): 00  04
-       UID (NFCID1): a2  dc  54  1c
-      SAK (SEL_RES): 08
-
-
+b'4b 01 01 00 04 08 04   a2 dc 54 1c'
+ATQA (SENS_RES): 00  04
+   UID (NFCID1): a2  dc  54  1c
+  SAK (SEL_RES): 08
 
 KeyCard 2
 [182, 230, 120, 43, 3]
 ID: 785550682883
 bytearray(b'K\x01\x01\x00\x04\x08\x04\xb6\xe6x+')
-b'4b010100040804b6e6782b'
+b'4b 01 01 00 04 08 04   b6 e6 78 2b'
+  0  1  2  3  4  5  6    7  8  9  10   11 12 13 14 15
 
 KeyCard 3
 [18, 156, 180, 52, 14]
 ID: 79938466830
 bytearray(b'K\x01\x01\x00\x04\x08\x04\x12\x9c\xb44')
 
-
+CreditCard
+bytearray(b'K\x01\x01\x00D \x07\x02\xb0\xfe\x01\xc0\xc4@\x14x\x80t\x02\x001\xc1s\xc8!\x10dGM13\x00\x90\x00')
+b'4b 01 01 00 44 20 07   02 b0 fe 01 c0 c4 40   14 78 80 74 02 00 31 c1 73 c8 21 10 64 47 4d 31 33 00 90 00'
+  0  1  2  3  4  5  6    7  8  9  10 11 12 13   14 15
+45153793
+ATQA (SENS_RES): 00  44
+   UID (NFCID1): 02  b0  fe  01  c0  c4  40
+  SAK (SEL_RES): 20
+            ATS: 78  80  74  02  00  31  c1  73  c8  21  10  64  47  4d  31  33  00  90  00

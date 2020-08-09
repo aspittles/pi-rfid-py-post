@@ -20,13 +20,14 @@ def rfid_read_PN532():
   pn532 = Pn532_i2c()
   pn532.SAMconfigure()
   card_data = pn532.read_mifare().get_data()
-  uid = uid_to_num(card_data[7:11])
+  uid = uid_to_num(card_data[7:7+card_data[6]],card_data[6])
+#  uid = uid_to_num(card_data[7:11])
   return uid
 
 # Function to convert UID bytearray to a decimal UID
-def uid_to_num(uid):
+def uid_to_num(uid,size):
   n = 0
-  for i in range(0, 4):
+  for i in range(0, size):
     n = n * 256 + uid[i]
   return n
 
@@ -44,7 +45,7 @@ def validate_access( uid, data ):
       now = datetime.datetime.now()
       data["users"][str(uid)]["lastEntered"] = now.strftime("%Y-%m-%d %H:%M:%S")
       with open('rfid-door-lock.json', 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4)
       led_green()
     else:
       logging.info("BLOCK: Deactivated card attempt by: " + str(uid) + " (" + name + ")")
