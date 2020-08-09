@@ -1,0 +1,75 @@
+{
+    "config": {
+        "log_level": "DEBUG",
+        "log_file": "/home/pi/pi-rfid-py-post/v3/door-access.log",
+        "reader": "PN532",
+        "open_door": false,
+        "door_pass": "<Password>"
+    },
+    "users": {
+        "2732348444": {
+            "created": "2020-07-01 19:00:00",
+            "lastEntered": "2020-08-06 17:00:04",
+            "keyType": "KeyCard",
+            "active": true,
+            "firstName": "Krish",
+            "lastName": "Lee"
+        },
+        "3068557355": {
+            "created": "2020-07-01 19:00:00",
+            "lastEntered": "2020-08-09 13:36:15",
+            "keyType": "KeyCard",
+            "active": true,
+            "firstName": "Fred",
+            "lastName": "Blogs"
+        },
+        "312259636": {
+            "created": "2020-07-01 19:00:00",
+            "lastEntered": "2020-08-09 13:48:28",
+            "keyType": "KeyCard",
+            "active": true,
+            "firstName": "Denial",
+            "lastName": "Roast"
+        },
+        "4148610171": {
+            "created": "2020-07-01 19:00:00",
+            "lastEntered": "2020-08-06 17:02:29",
+            "keyType": "KeyFob",
+            "active": true,
+            "firstName": "Devid",
+            "lastName": "Neo"
+        },
+        "4221673243": {
+            "created": "2020-07-01 19:00:00",
+            "lastEntered": "2020-08-06 17:02:42",
+            "keyType": "KeyFob",
+            "active": true,
+            "firstName": "Jone",
+            "lastName": "Mac"
+        },
+        "3377558178": {
+            "created": "2020-07-01 19:00:00",
+            "lastEntered": "2020-08-06 17:02:34",
+            "keyType": "KeyFob",
+            "active": true,
+            "firstName": "Jo",
+            "lastName": "Gudy"
+        },
+        "757554951013440": {
+            "created": "2020-08-09 13:48:00",
+            "lastEntered": "2020-08-09 13:48:34",
+            "keyType": "CreditCard",
+            "active": true,
+            "firstName": "Sean",
+            "lastName": "Gilbert"
+        },
+        "1271574632154752": {
+            "created": "2020-08-09 13:51:00",
+            "lastEntered": "2020-08-09 13:53:59",
+            "keyType": "OpalCard",
+            "active": true,
+            "firstName": "Ian",
+            "lastName": "Olli"
+        }
+    }
+}

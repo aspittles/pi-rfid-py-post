@@ -33,25 +33,32 @@ def uid_to_num(uid,size):
 
 # Function to Validate the Card UID against JSON list of allowed users
 def validate_access( uid, data ):
-  try:
-    name = (data["users"][str(uid)]["firstName"]) + " " + (data["users"][str(uid)]["lastName"])
-    authorised = (data["users"][str(uid)]["active"])
+  # Check if UID is defined
+  found = False
+  for i in range(0, len(data["users"])):
+    record = data["users"][i]
+    if (record["uid"] == str(uid)):
+      name = record["firstName"] + " " + record["lastName"]
+      authorised = record["active"]
+      found = True
+      record_num = i
+  if found:
     if authorised:
       if (data["config"]["open_door"]):
         doorpass = data["config"]["door_pass"]
         open_door(doorpass)
       logging.info("ALLOW: Access by: " + str(uid) + " (" + name + ")")
-      logging.debug((data["users"][str(uid)]))
+      logging.debug((data["users"][record_num]))
       now = datetime.datetime.now()
-      data["users"][str(uid)]["lastEntered"] = now.strftime("%Y-%m-%d %H:%M:%S")
-      with open('rfid-door-lock.json', 'w') as f:
+      data["users"][record_num]["lastEntered"] = now.strftime("%Y-%m-%d %H:%M:%S")
+      with open('/home/pi/pi-rfid-py-post/v3/rfid-door-lock.json', 'w') as f:
         json.dump(data, f, indent=4)
       led_green()
     else:
       logging.info("BLOCK: Deactivated card attempt by: " + str(uid) + " (" + name + ")")
-      logging.debug((data["users"][str(uid)]))
+      logging.debug((data["users"][record_num]))
       led_red()
-  except KeyError:
+  else:
     authorised = False
     logging.info("BLOCK: Access attempt by: " + str(uid))
     led_red()
