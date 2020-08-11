@@ -20,7 +20,7 @@
         {
             "uid": "3068557355",
             "created": "2020-08-09 21:02:16",
-            "lastEntered": "2020-08-09 21:23:22",
+            "lastEntered": "2020-08-09 22:06:37",
             "keyType": "KeyCard",
             "active": true,
             "firstName": "User2",
@@ -30,7 +30,7 @@
         {
             "uid": "312259636",
             "created": "2020-08-09 21:02:46",
-            "lastEntered": "2020-08-09 21:08:18",
+            "lastEntered": "2020-08-11 15:43:31",
             "keyType": "KeyCard",
             "active": true,
             "firstName": "User3",
@@ -50,7 +50,7 @@
         {
             "uid": "4221673243",
             "created": "2020-08-09 21:03:52",
-            "lastEntered": "2020-08-09 21:09:03",
+            "lastEntered": "2020-08-10 12:04:27",
             "keyType": "KeyFob",
             "active": true,
             "firstName": "User5",

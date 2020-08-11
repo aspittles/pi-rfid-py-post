@@ -55,6 +55,15 @@ led_init()
 # Create RFID reader object
 reader = SimpleMFRC522()
 
+#Signal that we are up and running
+for led_flash in range(0, 15):
+  led_green()
+  sleep(0.05)
+  led_red()
+  sleep(0.05)
+  led_off()
+  sleep(0.05)
+
 # Main Loop
 try:
   while True:
